@@ -4,20 +4,20 @@ on python, I'm reading a tutorial name
 ["roguelike tutorial"](https://rogueliketutorials.com/)
 
 
-To run in you should install the python library "tcod"
+To run in you should install the python library "*tcod*"
 to install run:
 
-*Linux:*
+**Linux:**
 ```
     python3 -m pip install --user tcod
 ```
 
-*Windows:*
+**Windows:**
 ```
     pip install tcod
 ```
 
-*MacOS:*
+**MacOS:**
 ```
     python3 -m pip install --user tcod
 ```
