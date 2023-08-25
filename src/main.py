@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import tcod
 
-from actions import EscapeAction, MovementAction
 from input_handlers import EventHandler
 from entity import Entity
 from engine import Engine
