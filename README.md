@@ -22,4 +22,4 @@ to install run:
     python3 -m pip install --user tcod
 ```
 
-for more information for installation go to [that link](https://python-tcod.readthedocs.io/en/latest/installation.html):
+for more information for installation or dependencies go to [ link](https://python-tcod.readthedocs.io/en/latest/installation.html):
