@@ -13,7 +13,9 @@ class EventHandler(tcod.event.EventDispatch[Action]):
 
         key = event.sym
 
-        if key == tcod.event.K_UP:
+        if key == tcod.event.k_UP and key == tcod.event.k_LEFT:
+            action = MovementAction(dx=-1, dy=-1)
+        elif key == tcod.event.K_UP:
             action = MovementAction(dx=0, dy=-1)
         elif key == tcod.event.K_DOWN:
             action = MovementAction(dx=0, dy=1)
