@@ -21,4 +21,18 @@ tile_dt = np.dtype(
 )
 
 
+def new_title(
+    *,  # Enforce the use of keywords, so that parameter order doesn't matter.
+    walkable: int,
+    transparent: int,
+    dark: Tuple[int, Tuple[int, int, int], Tuple[int, int, int]],
+) -> np.ndarray:
+    """Helper function for defining individual tile types """
+    return np.array((walkable, transparent, dark), dtype=tile_dt)
 
+floor = new_title(
+    walkable=True, transparent=True, dark=(ord(" "), (255, 255, 255), (50, 50, 150))
+)
+
+wall = new_title(
+    walkable=False, transparent=False, dark=(ord(" "), (255, 255, 255), (0, 0, 100)))
