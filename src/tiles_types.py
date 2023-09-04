@@ -3,7 +3,7 @@ from typing import Tuple
 import numpy as np
 
 # Tile graphics structured type compatible with Console.tiles_rgb.
-graphic_dt = np.dtype(
+graphic_dt = np.dtype(      # Anotation: np.dtype is similar to struct in C
     [
         ("ch", np.int32),  # Unicode codepoint.
         ("fg", "3B"),  # 3 unsigned bytes, for RGB colors.
