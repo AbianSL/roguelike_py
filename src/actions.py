@@ -27,3 +27,7 @@ class MovementAction(Action):
 
         self.dx = dx
         self.dy = dy
+
+    def perfom(self, engine: Engine, entity, Entity) -> None:
+        entity.move(self.dx, self.dy)
+
