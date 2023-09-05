@@ -31,8 +31,8 @@ def new_title(
     return np.array((walkable, transparent, dark), dtype=tile_dt)
 
 floor = new_title(
-    walkable=True, transparent=True, dark=(ord("░"), (255, 255, 255), (50, 50, 150))
+    walkable=True, transparent=True, dark=(ord(" "), (255, 255, 255), (50, 50, 150))
 )
 
 wall = new_title(
-    walkable=False, transparent=False, dark=(ord("░"), (255, 255, 255), (0, 0, 100)))
+    walkable=False, transparent=False, dark=(ord(" "), (255, 255, 255), (0, 0, 100)))
