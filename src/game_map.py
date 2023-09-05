@@ -7,7 +7,7 @@ import tiles_types
 class GameMap:
     def __init__(self, width: int, height: int):
         self.width, self.height = width, height
-        self.tiles = np.full((width, height), fill_value=tile_types.floor, order="F")
+        self.tiles = np.full((width, height), fill_value=tiles_types.floor, order="F")
 
         self.tiles[30:33, 22] = tiles_types.wall
 
